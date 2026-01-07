@@ -74,7 +74,7 @@
         <div class="video-frame">
             <!-- Default Video -->
             <iframe id="videoPlayer" 
-                    src="https://www.youtube.com/embed/u74VQSMsuGU?start=5690" 
+                    src="https://www.youtube.com/embed/lepYkDZ62OY?start=5690" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
             </iframe>
@@ -87,13 +87,13 @@
             if (!url) return alert("Please enter a YouTube URL!");
 
             // Extract the video ID from YouTube URL
-            const videoIdMatch = url.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)|youtu\.be\/([a-zA-Z0-9_-]+)/);
+            const videoIdMatch = url.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\.\/watch\?v=([a-zA-Z0-9_-]+)|youtu\.be\/([a-zA-Z0-9_-]+)/);
             const videoId = videoIdMatch ? (videoIdMatch[1] || videoIdMatch[2]) : null;
 
             if (!videoId) return alert("Invalid YouTube URL!");
 
             const iframe = document.getElementById('videoPlayer');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            iframe.src = `https://www.youtube.com./embed/${videoId}?autoplay=1`;
         }
     </script>
 
